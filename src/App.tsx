@@ -43,31 +43,41 @@ function App() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col md:flex-row gap-12 justify-center items-center"
+            className="flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <a 
-              href="https://bealive.ai/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center text-cyan-400/80 font-jetbrains-mono transition-all duration-300
-                hover:text-cyan-400 hover:scale-105"
+            <motion.p
+              className="text-gray-400 font-jetbrains-mono mb-6 text-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <span className="text-xl tracking-wide">Alive AI</span>
-              <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-            </a>
-            <a 
-              href="https://wandai.app/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center text-cyan-400/80 font-jetbrains-mono transition-all duration-300
-                hover:text-cyan-400 hover:scale-105"
-            >
-              <span className="text-xl tracking-wide">Wand AI</span>
-              <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-            </a>
+              
+            </motion.p>
+            <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
+              <a 
+                href="https://bealive.ai/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300
+                  hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
+              >
+                <span className="text-xl tracking-wide">Alive AI</span>
+                <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+              </a>
+              <a 
+                href="https://wandai.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300
+                  hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
+              >
+                <span className="text-xl tracking-wide">Wand AI</span>
+                <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
