@@ -68,7 +68,7 @@ function App() {
                 <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               </a>
               <a 
-                href="https://wandai.app/" 
+                href="https://www.wandai.app/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300
