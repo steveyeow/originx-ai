@@ -79,6 +79,40 @@ function App() {
               </a>
             </div>
           </motion.div>
+          
+          {/* Footer */}
+          <motion.div
+            className="fixed bottom-6 left-0 right-0 z-20 px-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <div className="flex justify-between items-center">
+              {/* Twitter/X Icon - Left */}
+              <motion.a
+                href="https://x.com/OriginX_AI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-[#000810]/50 backdrop-blur-sm rounded-full p-2"
+                whileHover={{ scale: 1.1 }}
+              >
+                <svg 
+                  viewBox="0 0 24 24" 
+                  className="w-4 h-4 text-[#7AECFF] hover:text-[#A5F1FF] transition-colors duration-300"
+                  fill="currentColor"
+                >
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </motion.a>
+
+              {/* Copyright - Right */}
+              <div className="bg-[#000810]/50 backdrop-blur-sm rounded-full px-4 py-2">
+                <span className="text-[#7AECFF] font-jetbrains-mono text-sm">
+                  Copyright © 2024 OriginX.AI
+                </span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
