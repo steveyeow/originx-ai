@@ -21,8 +21,6 @@ export const BinaryStream = () => {
     position: { top: number; left: number };
   }>>([]);
 
-  const [isVisible, setIsVisible] = React.useState(true);
-
   const getNewPosition = (existingPositions: Array<{ top: number; left: number }>) => {
     let attempts = 0;
     while (attempts < 100) {
@@ -94,23 +92,9 @@ export const BinaryStream = () => {
     return () => clearInterval(interval);
   }, []);
 
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(prev => !prev);
-    }, Math.random() * 2500 + 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="absolute inset-0 overflow-hidden">
-      <motion.div
-        animate={{ opacity: isVisible ? 1 : 0 }}
-        transition={{
-          duration: 0.5,
-          ease: "easeInOut"
-        }}
-      >
+      <div>
         {[...Array(4)].map((_, index) => (
           <div
             key={`stream-${index}`}
@@ -187,7 +171,7 @@ export const BinaryStream = () => {
             {element.pattern}
           </motion.div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
