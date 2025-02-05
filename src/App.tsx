@@ -108,7 +108,7 @@ function App() {
               {/* Copyright - Right */}
               <div className="bg-[#000810]/50 backdrop-blur-sm rounded-full px-4 py-2">
                 <span className="text-[#7AECFF] font-jetbrains-mono text-sm">
-                  Copyright © 2024 OriginX.AI
+                  Copyright © 2025 OriginX.AI
                 </span>
               </div>
             </div>
