@@ -68,13 +68,13 @@ function App() {
                 <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               </a>
               <a 
-                href="https://www.wandai.app/" 
+                href="https://www.threegen.ai/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300
                   hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
               >
-                <span className="text-xl tracking-wide">Wand AI</span>
+                <span className="text-xl tracking-wide">Threegen.AI</span>
                 <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               </a>
             </div>
