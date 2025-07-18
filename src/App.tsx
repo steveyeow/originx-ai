@@ -26,7 +26,7 @@ function App() {
               letterSpacing: '0.02em'
             }}
           >
-            Building Real-Time Generative Information Services For The Rest Of Us
+            build real-time generative information services for the rest of us
           </motion.h1>
           
           <motion.p 
