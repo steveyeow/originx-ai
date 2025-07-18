@@ -26,7 +26,7 @@ function App() {
               letterSpacing: '0.02em'
             }}
           >
-            Building AGI For The Rest Of Us
+            Building Real-Time Generative Information Services For The Rest Of Us
           </motion.h1>
           
           <motion.p 
