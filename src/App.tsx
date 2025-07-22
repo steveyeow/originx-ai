@@ -23,7 +23,7 @@ function App() {
                 0 0 40px rgba(250, 250, 250, 0.3),
                 0 0 70px rgba(250, 250, 250, 0.2)
               `,
-              letterSpacing: '0.02em'
+              letterSpacing: '0.02em',
               lineHeight: 1.3
             }}
           >
