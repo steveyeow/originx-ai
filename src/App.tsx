@@ -24,6 +24,7 @@ function App() {
                 0 0 70px rgba(250, 250, 250, 0.2)
               `,
               letterSpacing: '0.02em'
+              lineHeight: 1.3
             }}
           >
             <span className="block whitespace-nowrap">build real-time generative information services</span>
