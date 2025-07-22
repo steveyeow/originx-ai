@@ -10,7 +10,7 @@ function App() {
       <div className="relative z-10 container mx-auto px-4 h-screen flex items-center justify-center">
         <div className="text-center">
           <motion.h1 
-            className="text-2xl md:text-5xl lg:text-6xl font-jetbrains-mono font-bold mb-8 tracking-tight"
+            className="text-2xl md:text-3xl lg:text-5xl font-jetbrains-mono font-bold mb-8 tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -26,8 +26,8 @@ function App() {
               letterSpacing: '0.02em'
             }}
           >
-            {`build real-time generative information services`}<br />
-            {`for the rest of us`}
+            <span className="block whitespace-nowrap">build real-time generative information services</span>
+            <span className="block whitespace-nowrap">for the rest of us</span>
           </motion.h1>
           
           <motion.p 
@@ -59,16 +59,6 @@ function App() {
             </motion.p>
             <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
               <a 
-                href="https://bealive.ai/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300
-                  hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
-              >
-                <span className="text-xl tracking-wide">Alive AI</span>
-                <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-              </a>
-              <a 
                 href="https://www.threegen.ai/" 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -76,6 +66,16 @@ function App() {
                   hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
               >
                 <span className="text-xl tracking-wide">Threegen.AI</span>
+                <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+              </a>
+              <a 
+                href="https://bealive.ai/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300
+                  hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
+              >
+                <span className="text-xl tracking-wide">Alive AI</span>
                 <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               </a>
             </div>
