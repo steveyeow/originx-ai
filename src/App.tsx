@@ -10,7 +10,7 @@ function App() {
       <div className="relative z-10 container mx-auto px-4 h-screen flex items-center justify-center">
         <div className="text-center">
           <motion.h1 
-            className="text-2xl md:text-3xl lg:text-5xl font-jetbrains-mono font-bold mb-8 tracking-tight"
+            className="text-2xl md:text-3xl lg:text-5xl font-jetbrains-mono font-bold mb-8 tracking-tight max-w-xl mx-auto px-2 break-words"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -23,12 +23,12 @@ function App() {
                 0 0 40px rgba(250, 250, 250, 0.3),
                 0 0 70px rgba(250, 250, 250, 0.2)
               `,
-              letterSpacing: '0.02em',
-              lineHeight: 1.5
+              letterSpacing: '0.02em', // 这里加逗号
+              lineHeight: 1.35
             }}
           >
-            <span className="block whitespace-nowrap">build real-time generative information services</span>
-            <span className="block whitespace-nowrap">for the rest of us</span>
+            <span className="block">build real-time generative information services</span>
+            <span className="block">for the rest of us</span>
           </motion.h1>
           
           <motion.p 
