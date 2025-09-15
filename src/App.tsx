@@ -10,7 +10,7 @@ function App() {
       <div className="relative z-10 container mx-auto px-4 h-screen flex items-center justify-center">
         <div className="text-center">
           <motion.h1 
-            className="text-2xl md:text-3xl lg:text-5xl font-jetbrains-mono font-bold mb-8 tracking-tight max-w-xl mx-auto px-2 break-words"
+            className="text-2xl md:text-3xl lg:text-5xl font-jetbrains-mono font-bold mb-8 tracking-tight max-w-full md:max-w-none mx-auto px-2 md:px-0 break-words md:break-normal"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
