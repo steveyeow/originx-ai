@@ -59,6 +59,16 @@ function App() {
               
             </motion.p>
             <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
+              <a
+                href="https://insgen.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center text-[#FFD700] font-jetbrains-mono transition-all duration-300 hover:text-[#FFE55C] underline underline-offset-4 decoration-1"
+              >
+                <span className="text-xl tracking-wide">Insgen</span>
+                <span className="ml-3 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+              </a>
+
               <a 
                 href="https://www.threegen.ai/" 
                 target="_blank"
